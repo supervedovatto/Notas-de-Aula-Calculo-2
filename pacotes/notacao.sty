@@ -1,0 +1,144 @@
+\newcommand{\dnormal}[2]{Normal(#1,#2^2)} %DESCONTINUADO
+\newcommand{\Normal}{\mathcal{N}}
+\newcommand{\Cauchy}{\mathrm{Cauchy}}
+\newcommand{\AlfaEstavel}{\alpha\mathrm{-estável}}
+\newcommand{\Poisson}{\bm{Poisson}}
+\newcommand{\Pareto}{\mathrm{\mathbf{Pareto}}}
+\newcommand{\Beta}{\mathrm{\mathbf{Beta}}}
+\newcommand{\BinomialNegativa}{\mathrm{\mathbf{BN}}}
+\newcommand{\Exponencial}{\mathrm{\mathbf{Exp}}}
+\newcommand{\Gama}{\mathrm{\mathbf{Gama}}}
+\newcommand{\Binomial}{\mathrm{\mathbf{Bin}}}
+\newcommand{\UniformeDiscreta}{\mathrm{\mathbf{U_D}}}
+\newcommand{\UniformeContinua}{\mathrm{\mathbf{U_C}}}
+\newcommand{\Bernoulli}{\bm{Ber}}
+\newcommand{\Hipergeometrica}{\bm{Hip}}
+\newcommand{\Geo}{\bm{Geo}}
+%\newcommand{\dbinomial}[2]{Binomial(#1,#2)} %DESCONTINUADO
+%\newcommand{\dbernoulli}[1]{Bernoulli(#1)} %DESCONTINUADO
+\newcommand{\estimado}[1]{\tilde{#1}}
+\newcommand{\estimador}[1]{\hat{#1}}
+\newcommand{\EMV}{EMV} %Estimador de máxima verossimilhança
+\newcommand{\EQM}{EQM} %Erro quadrático médio
+\newcommand{\vero}[2][x]{L(#2|\mathbf{#1})}
+\newcommand{\induvero}[2][x]{L^{*}(#2|\mathbf{#1})}
+\newcommand{\logvero}[2][x]{l(#2|\mathbf{#1})}
+\newcommand{\fdp}[2][x]{f(#2|\mathbf{#1})}
+%\newcommand{\lista}[3][x]{#1_{#2},\ldots,#1_{#3}}
+%\newcommand{\intle}[3][x]{#2\leq#1\leq#3} %DESCONTINUADO
+%\newcommand{\esperanca}[2][]{\textrm{E}#1(#2)} %DESCONTINUADO
+%\newcommand{\ESP}{\mathrm{E}}
+
+%\newcommand{\vicio}[2][]{\textrm{Vício}#1(#2)} %DESCONTINUADO
+\newcommand{\Vicio}{\mathrm{Vicio}}
+\newcommand{\reais}{\mathbb{R}}
+\newcommand{\racionais}{\mathbb{Q}}
+\newcommand{\inteiros}{\mathbb{Z}}
+\newcommand{\naturais}{\mathbb{N}}
+\newcommand{\complexos}{\mathbb{C}}
+\newcommand{\imaginarios}{\mathbb{I}}
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\cotg}{cotg}
+%Exponencial
+\DeclareMathOperator{\e}{\mathrm{e}}
+%Notação para a Nadarajah Haghighi
+\DeclareMathOperator{\NH}{\mathrm{NH}}
+%Notação para a exponentiated Generalized Nadarajah Haghighi
+\DeclareMathOperator{\EGNH}{\mathrm{EGNH}}
+%Notação para a exponentiated Nadarajah Haghighi
+\DeclareMathOperator{\ENH}{\mathrm{ENH}}
+%Notação para a Cauchy Rayleigh
+\DeclareMathOperator{\CR}{\mathrm{CR}}
+%Notação para a exponentiated Cauchy Rayleigh
+\DeclareMathOperator{\ECR}{\mathrm{ECR}}
+%Notação para a Experança Matemática
+\DeclareMathOperator{\E}{\mathbb{E}}
+%Notação para a Variância
+\DeclareMathOperator{\V}{\mathbb{V}}
+%Notação para a Função Beta
+\DeclareMathOperator{\B}{\mathrm{B}}
+
+%Igual em distribuição
+\newcommand{\igualdist}{\,{\buildrel d \over =}\,}
+
+%Converge em distribuição
+\newcommand{\condist}{\,{\buildrel d \over \rightarrow}\,}
+
+%Igual em probabilidade
+\newcommand{\igualprob}{\,{\buildrel p \over =}\,}
+
+%Converge em probabilidade
+\newcommand{\conprob}{\,{\buildrel p \over \rightarrow}\,}
+
+%Convergencia quase certa
+\newcommand{\conqc}{\,{\buildrel qc \over \rightarrow}\,}
+
+%Covariância
+\DeclareMathOperator{\cov}{cov}
+%Notação abreviada
+\DeclareMathOperator{\acov}{\gamma}
+
+%Coeficiente de correlação
+\DeclareMathOperator{\cor}{cor}
+%Notação abreviada
+\DeclareMathOperator{\acor}{\rho}
+
+%Desvio Padrão Populacional
+\DeclareMathOperator{\desviop}{\mathit{dp}}
+
+%Distribuição
+\DeclareMathOperator{\dist}{dist}
+
+%Esperança Matemática
+\DeclareMathOperator{\esp}{\mathit{E}}
+%Notação abreviada
+\DeclareMathOperator{\aesp}{\mu}
+
+%Probabilidade
+\DeclareMathOperator{\prob}{\mathit{P}}
+
+%Média Aritmética Simples
+\newcommand{\media}[1]{\overline{#1}}
+%Mediana
+\newcommand{\mediana}[1]{md\left(#1\right)}
+%Moda
+\newcommand{\moda}[1]{mo\left(#1\right)}
+%Variância Populacional
+\DeclareMathOperator{\varp}{\var}
+%Variância Amostral
+\DeclareMathOperator{\vara}{S}
+
+%Variância
+%Alguns livros usam \DeclareMathOperator{\var}{\mathit{var}}
+\DeclareMathOperator{\var}{var}
+%Notação abreviada
+\DeclareMathOperator{\avar}{\sigma^2}
+
+%Amplitude
+\DeclareMathOperator{\range}{\mathit{R}}
+
+%Desvio Padrão amortral
+\DeclareMathOperator{\stddev}{\mathit{S}}
+
+%Função menor inteiro maior ou igual à
+\newcommand{\maiorinteiro}[1]{\left\lceil#1\right\rceil}
+
+%Função maior inteiro menor ou igual à
+\newcommand{\menorinteiro}[1]{\left\lfloor#1\right\rfloor}
+
+%%%%Símbolo de União Disjunta%%%%
+%%%Usar com o comando \cupdot
+\makeatletter
+\providecommand*{\cupdot}{%
+	\mathbin{%
+		\mathpalette\@cupdot{}%
+	}%
+}
+\newcommand*{\@cupdot}[2]{%
+	\ooalign{%
+		$\m@th#1\cup$\cr
+		\hidewidth$\m@th#1\cdot$\hidewidth
+	}%
+}

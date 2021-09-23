@@ -1,0 +1,72 @@
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,raster}
+\newtcolorbox{myblock}[1]{
+  enhanced,
+  colback=#1!20!white,colframe=#1!75!black,colbacktitle=#1!80!black,
+fonttitle=\bfseries}
+\newtcolorbox{exemplo}[1]{
+  enhanced,
+  colback=cor4!5!white,colframe=cor4!75!black,
+  before title={Exemplo:\space},
+  title=#1,
+fonttitle=\bfseries}
+\newtcolorbox{exercicio}[1]{
+  enhanced,
+  after title=#1,
+  colback=cor1!5!white,colframe=cor1!75!black,
+  title={Exercício},
+fonttitle=\bfseries}
+\newtcolorbox{definicao}[1]{enhanced,
+  attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=cor3!5!white,colframe=cor3!75!black,colbacktitle=cor3!80!black,
+  title=#1,
+  fonttitle=\bfseries,
+boxed title style={size=small,colframe=cor3!50!black}}
+\newtcolorbox{aviso}[1]{enhanced,
+  attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=cor2!5!white,colframe=cor2!75!black,colbacktitle=cor2!80!black,
+  title=#1,
+  fonttitle=\bfseries,
+boxed title style={size=small,colframe=cor2!50!black}}
+\newtcolorbox{resultado}[1]{enhanced,
+  attach boxed title to top center={yshift=-3mm,yshifttext=-1mm},
+  colback=cor5!5!white,colframe=cor5!75!black,colbacktitle=cor5!80!black,
+  title=#1,
+  fonttitle=\bfseries,
+boxed title style={size=small,colframe=cor5!50!black}}
+\newtcolorbox{titulo}{
+  arc is angular,
+  enhanced,
+  sharp corners=uphill,
+  colback=black!5!white,colframe=black,coltext=black,
+  fontupper=\Large\bfseries,
+  arc=6mm,
+  boxrule=2mm, boxsep=5mm,
+borderline={0.3mm}{0.3mm}{white}}
+\newtcbox{\offlinebox}[1][cor1]{
+  colback=#1!5!white,	colframe=#1!75!black,
+  center,
+left=6pt,right=6pt,top=2pt,bottom=2pt}
+\newtcbox{\onlinebox}[1][cor1]{
+  on line,arc=7pt,
+  colback=#1!5!white,	colframe=#1!75!black,
+  before upper={\rule[-3pt]{0pt}{10pt}},
+  boxrule=1pt,boxsep=0pt,
+left=6pt,right=6pt,top=2pt,bottom=2pt}
+\newenvironment{mycases}[3][]{\begin{tcbitemize}[
+    raster columns=#2,
+    raster equal height,
+    colframe=#3!75!black,
+    colback=#3!5!white,
+    colbacktitle=#3,\definecolor{vermelho}{RGB}{200,25,30}
+    attach boxed title to top center={yshift=-7pt},
+    enhanced,
+    fontupper=#1,
+  fonttitle=\bfseries]}%
+{\end{tcbitemize}}
+
+\tcbset{textmarker/.style={skin=enhancedmiddle jigsaw,parbox=false,
+		boxrule=0mm,leftrule=3mm,rightrule=3mm,boxsep=0mm,arc=0mm,outer arc=0mm,
+		left=1mm,right=1mm,top=1mm,bottom=1mm,toptitle=1mm,bottomtitle=1mm}}
+
+\newtcolorbox{dica}{textmarker,colback=cor3!5!white,colframe=cor3}
