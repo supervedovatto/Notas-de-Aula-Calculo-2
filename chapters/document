@@ -1,9 +1,0 @@
-\documentclass{article}
-
-\begin{document}
-
-\begin{equation}
-\sum_{i=1}^{\ifnty}i^2
-\end{equation}
-
-\end{document}
