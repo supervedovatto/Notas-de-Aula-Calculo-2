@@ -1,0 +1,129 @@
+\usefonttheme{professionalfonts}
+
+\newcolumntype{g}{>{\columncolor{cor3}}c}
+
+%\setbeamercolor{background canvas}{parent=normal text}
+%\setbeamercolor{background}{parent=background canvas}
+%\setbeamercolor{alerted text}{fg = vermelho,bg=white}
+%\setbeamercolor{example text}{fg = azul-padrao,bg=white}
+%\setbeamercolor{palette primary}{bg = verde-muitoescuro,fg=white}
+%\setbeamercolor{palette secondary}{bg = verde-escuro,fg=white}
+%\setbeamercolor{palette tertiary}{bg = verde-padrao,fg=white}
+%\setbeamercolor{palette quaternary}{bg = verde-claro,fg=white}
+%%\setbeamercolor{titlelike}{parent=palette secondary}
+%%\setbeamercolor{title}{bg=verde-escuro}
+%\setbeamercolor{frametitle}{bg = verde-escuro}
+%\setbeamercolor{framesubtitle}{bg = verde-padrao}
+%%\setbeamercolor{alerted text}{fg=red!80!black}
+%\setbeamercolor{item}{fg = black}
+%%\setbeamercolor{item projected}{bg=azul}
+%\setbeamercolor{block title example}{bg = azul-padrao}
+%\setbeamercolor{block body example}{bg = azul-muitoclaro}
+%\setbeamercolor{block title}{bg = verde-padrao}
+%\setbeamercolor{block body}{bg=verde-muitoclaro}
+%\setbeamercolor{tableofcontend}{fg=verde-muitoescuro}
+%\setbeamercolor{section in toc}{fg =vermelho}
+%
+%%\setbeamercolor{description item}{fg = verde-escuro}
+%%\setbeamercolor{background canvas}{bg=black}
+%\setbeamercolor{bibliography entry location}{fg=verde-escuro}
+%\setbeamercolor{bibliography entry author}{fg=verde-muitoescuro}
+%\setbeamercolor{bibliography entry note}{fg=verde-muitoclaro}
+%\setbeamercolor{bibliography entry title}{fg=verde-claro}
+%\setbeamercolor{bibliography entry item}{fg=verde-padrao}
+%
+%%\setbeamercolor{background canvas}{bg=}
+%%\setbeamercolor{structure}{fg=blue}
+%\setbeamercolor{lower separation line foot}{}
+%
+%\setbeamerfont{date in head/foot}{family=\sffamily}
+%\setbeamerfont{author in head/foot}{family=\sffamily}
+%\setbeamerfont{institute in head/foot}{family=\sffamily}
+%\setbeamerfont{page number in head/foot}{family=\sffamily}
+%\setbeamerfont{title in head/foot}{family=\sffamily}
+%\setbeamerfont{frametitle}{family=\sffamily}
+%\setbeamerfont{framesubtitle}{family=\sffamily}
+%%\setbeamerfont{block title}{family=\sffamily,size=\tiny,series=\bfseries}
+%\setbeamerfont{block title}{family=\sffamily}
+%\setbeamerfont{block example title}{parent=block title}
+%\setbeamerfont{description item}{series=\bfseries}
+%\setbeamerfont{normal text}{series=\normalfont, size=\fontsize{10}{12}}
+
+\setbeamercovered{transparent=20}
+
+%CONFIGURA O FORMATO DOS INDICES NO AMBIENTE ENUMERATE
+%\setbeamertemplate{enumerate item}{\insertframenumber.\insertenumlabel}
+\setbeamertemplate{enumerate subitem}{\insertenumlabel.\insertsubenumlabel}
+
+\beamertemplatenavigationsymbolsempty
+%By default the beamer class adds navigation buttons in the bottom left corner. To remove them one can place
+
+\hypersetup{pdfstartview={Fit},pdfpagemode=FullScreen,pdfauthor=Thiago VedoVatto,pdfproducer=Thiago VedoVatto}
+
+%\newcommand{\casio}[1]{\textsc{\texttt{\alert{#1}}}}
+
+\graphicspath{{figuras/}}
+\hypersetup{pdfkeywords={Calculo 2},pdftitle={Cálculo Diferencial e Integral 2}}
+%\newcommand{\turma}{Curso de Engenharia de Controle e Automação}
+
+\AtBeginSection[]{
+	\begin{frame}
+		\vfill
+		\centering
+		\begin{titulo}
+			\usebeamerfont{title}\insertsectionhead\par%
+		\end{titulo}
+		\vfill
+	\end{frame}
+}
+
+%\defbeamertemplate*{title page}{customized}[1][]
+%{
+%	\begin{tcolorbox}[
+%		colback=cor3,
+%		fontupper=\huge\bfseries,
+%		colupper=white,
+%		colframe=cor3!75!black,
+%		borderline horizontal={6pt}{0pt}{cor1}]
+%		\begin{center}
+%			\inserttitle\par
+%			\insertsubtitle	
+%		\end{center}		
+%	\end{tcolorbox}
+%	\bigskip
+%	\begin{flushright}
+%		\begin{tcolorbox}[
+%			colback=cor5,
+%			fontupper=\small,
+%			text width=53ex,
+%			colupper=white,
+%			colframe=cor5!75!black,
+%			borderline horizontal={6pt}{0pt}{cor1},center title]
+%			\begin{flushright}
+%			\insertinstitute
+%			\end{flushright}
+%		\end{tcolorbox}
+%	\end{flushright}
+%	\bigskip
+%	\begin{tcolorbox}[title=Docente Responsável,fonttitle=\small\bfseries,
+%		titlerule=1px,bottomtitle=0mm,width=4cm,
+%		fonttitle=\scriptsize\bfseries,
+%		colback=cor1!5!white,
+%		colframe=cor1!75!black,
+%		toptitle=0mm,toprule=3px,boxsep=0mm]
+%		\insertauthor
+%	\end{tcolorbox}
+%	\bigskip
+%	\begin{tcolorbox}[size=small,bicolor,sidebyside,center lower,
+%		colupper=white,
+%		colframe=cor2!5!white,colbacklower=cor2!20,colback=cor2!75!black,,
+%		before lower*=\begin{tabular}{cc},
+%			after lower*=\end{tabular},
+%		]
+%		Data de Atualização:
+%		\tcblower
+%		\usebeamerfont{date}\insertdate
+%	\end{tcolorbox}
+%%	\tcbox{Data de Atualização}: \usebeamerfont{date}\insertdate\par
+%	\inserttitlegraphic	
+%}
